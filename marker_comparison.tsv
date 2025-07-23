@@ -1,0 +1,24 @@
+Marker Combination	Latent Knowledge	JSON Mapping File	Match Type
+CD3+	T cell	T Lymphocyte (cl:0000084)	Complete
+CD3+ CD4+ CD8-	CD4+ T cell	CD4+ T Cell (cl:0000624)	Complete
+CD3+ CD8+ CD4-	CD8+ T cell	CD8+ T Cell (cl:0000625)	Complete
+CD3+ CD4+ CD45RA+ CCR7+	CD4+ naive T cell	CD4+ Naive T Cell (cl:0000895)	Partial*
+CD3+ CD4+ CD45RA- CCR7+	CD4+ central memory T cell	CD4+ Central Memory T Cell (cl:0000904)	Partial*
+CD3+ CD8+ CD45RA- CCR7-	CD8+ effector memory T cell	CD8+ Effector Memory T Cell (cl:0000913)	Partial*
+CD3+ CD8+ CD45RA+ CCR7-	CD8+ TEMRA cell	CD8+ Terminal Effector Memory T Cell (cl:0000907)	Partial*
+CD19+ CD3-	B cell	No direct match**	-
+CD19+ CD27- IgD+	Naive B cell	Naive B Cell (cl:0000788)	Partial
+CD19+ CD27+ IgD-/+	Memory B cell	Memory B Cell (cl:0000787)	Partial
+CD19+ CD27++ CD38++	Antibody secreting cell/Plasma cell	Antibody Secreting Cell (cl:0000946)	Complete
+CD3- CD56+	NK cell	Natural Killer Cell (cl:0000623)	Complete
+CD3- CD56dim CD16+	NK cell (cytotoxic subset)	CD56dim NK Cell (cl:0000623)	Complete
+CD3- CD56bright CD16-	NK cell (regulatory subset)	CD56bright NK Cell (cl:0000623)	Complete
+CD14++ CD16- HLA-DR+	Classical monocyte	Classical Monocyte (cl:0000860)	Partial
+CD14++ CD16+ HLA-DR+	Intermediate monocyte	Intermediate Monocyte (cl:0000875)	Partial
+CD14+ CD16++ HLA-DR+	Non-classical monocyte	Non-Classical Monocyte (cl:0000875)	Partial
+CD11c+ HLA-DR+ CD123- Lineage-	Myeloid dendritic cell	Myeloid Dendritic Cell (cl:0000782)	Partial
+CD123+ HLA-DR+ CD11c- Lineage-	Plasmacytoid dendritic cell	No match***	-
+CD3+ CD4+ CD25high CD127low/- FOXP3+	Regulatory T cell (Treg)	Regulatory T Cell (cl:0000815)	Partial
+CD15+ CD16+ CD14-	Neutrophil	No match***	-
+CD15+ CD16- Siglec-8+	Eosinophil	No match***	-
+CD123+ HLA-DR- CD203c+	Basophil	No match***	-
