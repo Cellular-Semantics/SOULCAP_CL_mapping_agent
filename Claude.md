@@ -4,8 +4,6 @@ The input strings consist of lists of cell surface markers (+ve, -ve, high, low)
 To map these to Cell Ontology terms, you will use a JSON mapping file that
 can be found in `resources/pbmc_jsonld_cl.json`
 
-This contains a list of cell populations.  Example entry from list. Markers can be found in the 'marker_expression'.
-Ignore the string 'live'
 
 ```json
 {
@@ -26,6 +24,9 @@ Ignore the string 'live'
       "exactMatch": true
     }
 ```
+
+This file is consumed by a python mcp server cell-ontology-mapper that wil allow you to 
+search marker expression strings and return fully or partially matching CL terms
 
 Input strings will may include markers in any order and may use different separators.
 
