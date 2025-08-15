@@ -122,9 +122,12 @@ The system handles various marker input formats:
 
 The system provides three types of matches:
 
-1. **Complete Match**: All input markers are present in the population definition
-2. **Partial Match**: Some input markers match, but additional markers may be present
-3. **Broader Match**: Population is a broader category that includes the input markers
+1. **Exact Match**: Input markers match the entire population definition.
+2. **Incomplete Match**: All input markers are in the population definition which contains additional markers.
+3. **Partial Match**: Some input markers are in the population definition, which may also contain additional markers.
+
+No match is made if either none of the markers are present 
+or if a positive marker is negative for the population of vice versa
 
 ## Dataset Structure
 
@@ -200,6 +203,7 @@ Create test cases for new marker combinations:
 
 ```python
 # Test mapping
+from mcp_server import CellOntologyMapper
 mapper = CellOntologyMapper("resources/pbmc_jsonld_cl.json")
 matches = mapper.find_matches("CD3+ CD4+ CD45RA- CCR7+")
 print(f"Found {len(matches)} matches")

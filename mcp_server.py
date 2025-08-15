@@ -12,7 +12,7 @@ from typing import List, Dict, Any, Optional, Tuple
 from dataclasses import dataclass
 from mcp.server.models import InitializationOptions
 from mcp.server import NotificationOptions, Server
-from mcp.types import Resource, Tool, TextContent, ImageContent, EmbeddedResource
+from mcp.types import Resource, Tool, TextContent
 import mcp.types as types
 from pydantic import AnyUrl
 import asyncio
