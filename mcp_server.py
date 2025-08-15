@@ -134,9 +134,9 @@ class CellOntologyMapper:
                 })
         
         # Sort by match quality (complete > partial > broader)
-        match_priority = {'complete': 3, 'partial': 2, 'broader': 1}
+        match_priority = {'exact': 3, 'incomplete': 2, 'partial': 1}
         matches.sort(key=lambda x: match_priority.get(x['match_info']['match_type'], 0), reverse=True)
-        
+        matches.sort(key=lambda x: x['match_info']['score'], reverse=True)
         return matches
     
     def _evaluate_match(self, population: CellPopulation, pos_markers: List[str], neg_markers: List[str]) -> Dict[str, Any]:
@@ -151,34 +151,47 @@ class CellOntologyMapper:
         # Check matches
         pos_matches = set(pos_markers_std) & set(pop_pos)
         neg_matches = set(neg_markers_std) & set(pop_neg)
-        
         total_input_markers = len(pos_markers_std) + len(neg_markers_std)
         total_matches = len(pos_matches) + len(neg_matches)
-        
-        if total_matches == 0:
+
+        if (
+                (total_matches == 0) or
+                (set(pop_pos).intersection(set(neg_markers_std))) or
+                (set(pop_neg).intersection(set(pos_markers_std)))
+            ):
             return {'match_type': 'no_match', 'score': 0}
-        
-        # Check for complete match
-        if (set(pos_markers_std).issubset(set(pop_pos)) and 
-            set(neg_markers_std).issubset(set(pop_neg)) and
-            total_input_markers > 0):
+
+        match_score = total_matches / max(total_input_markers, len(pop_pos) + len(pop_neg))
+        # Check for exact match
+        if ((set(pos_markers_std) == set(pop_pos)) and
+            (set(neg_markers_std) == set(pop_neg))):
             return {
-                'match_type': 'complete',
+                'match_type': 'exact',
                 'score': 1.0,
                 'matched_positive': list(pos_matches),
                 'matched_negative': list(neg_matches)
             }
-        
+
+        # Check for complete match
+        elif (set(pos_markers_std).issubset(set(pop_pos)) and
+            set(neg_markers_std).issubset(set(pop_neg)) and
+            total_input_markers > 0):
+            return {
+                'match_type': 'incomplete',
+                'score': match_score,
+                'matched_positive': list(pos_matches),
+                'matched_negative': list(neg_matches)
+            }
         # Partial match
-        match_score = total_matches / max(total_input_markers, len(pop_pos) + len(pop_neg))
-        return {
-            'match_type': 'partial',
-            'score': match_score,
-            'matched_positive': list(pos_matches),
-            'matched_negative': list(neg_matches),
-            'missing_positive': list(set(pos_markers_std) - pos_matches),
-            'missing_negative': list(set(neg_markers_std) - neg_matches)
-        }
+        else:
+            return {
+                'match_type': 'partial',
+                'score': match_score,
+                'matched_positive': list(pos_matches),
+                'matched_negative': list(neg_matches),
+                'missing_positive': list(set(pos_markers_std) - pos_matches),
+                'missing_negative': list(set(neg_markers_std) - neg_matches)
+            }
     
     def _parse_population_markers(self, marker_expr: str) -> Tuple[List[str], List[str]]:
         """Parse population marker expression into positive and negative markers."""
@@ -215,6 +228,7 @@ class CellOntologyMapper:
     
     def _standardize_marker_name(self, marker: str) -> str:
         """Standardize marker names (e.g., CCR7 -> CD197)."""
+        ### Too much hard-wiring? (DOS)
         marker = marker.upper().strip()
         
         # Common synonyms
