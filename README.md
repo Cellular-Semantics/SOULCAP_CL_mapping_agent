@@ -40,7 +40,7 @@ This tool helps map input strings consisting of cell surface marker combinations
 
 ```bash
 python mcp_server.py &
-claude mcp add soulcap-mapper -- python mcp_server.py`
+claude mcp add soulcap-mapper -- python mcp_server.py
 claude
 ```
 
