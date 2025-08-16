@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "cell-ontology-mapper": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "cwd": ".",
+      "env": {
+        "PYTHONPATH": ".venv/bin"
+      }
+    }
+  }
+}
