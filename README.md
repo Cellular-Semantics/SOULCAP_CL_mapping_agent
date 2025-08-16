@@ -34,25 +34,58 @@ This tool helps map input strings consisting of cell surface marker combinations
    pip install -r requirements.txt
    ```
 
-3. **Configure MCP for Claude Code**
-   
-   Add the following to your Claude Code MCP configuration file:
-   ```json
-   {
-     "mcpServers": {
-       "cell-ontology-mapper": {
-         "command": "python",
-         "args": ["mcp_server.py"],
-         "cwd": "/path/to/SOULCAP_CL_mapping_agent",
-         "env": {
-           "PYTHONPATH": "/path/to/SOULCAP_CL_mapping_agent"
-         }
-       }
-     }
-   }
+## Usage
+
+### Claude + MCP
+
+```bash
+python mcp_server.py &
+claude mcp add soulcap-mapper -- python mcp_server.py`
+claude
+```
+
+
+1. **Start a mapping session**:
+   ```
+   Map the markers "CD3+ CD4+ CD45RA+ CCR7+" to Cell Ontology terms
    ```
 
-## Usage
+2. **Search for populations**:
+   ```
+   Search for all memory T cell populations
+   ```
+
+3. **Get detailed information**:
+   ```
+   Show me details about the regulatory T cell population
+   ```
+   
+### Use the Python library directly
+
+```python
+# Test mapping
+from mcp_server import CellOntologyMapper
+import pandas as pd
+mapper = CellOntologyMapper("resources/pbmc_jsonld_cl.json")
+matches = mapper.find_matches("CD3+ CD4+ CD45RA- CCR7+")
+print(f"Found {len(matches)} matches")
+out = [{ 'score': match['match_info']['score'], 
+         'type': match['match_info']['match_type'], 
+         'markers': match['population'].marker_expression, 
+         'label': match['population'].label} for match in matches]
+df = pd.DataFrame.from_records(out)
+df
+```
+
+score | type | markers | label
+-- | -- | -- | --
+0.5 | incomplete | live/CD45+/CD3+/CD4+/CD8-/CD197+/CD45RA+ | CD4+ Naive T Cell
+0.5 | incomplete | live/CD45+/CD3+/CD4+/CD8-/CD197+/CD45RA- | CD4+ Central Memory T Cell
+0.5 | incomplete | live/CD45+/CD3+/CD4+/CD8-/CD197-/CD45RA- | CD4+ Effector Memory T Cell
+0.5 | incomplete | live/CD45+/CD3+/CD4+/CD8-/CD197-/CD45RA+ | CD4+ Terminal Effector Memory T Cell
+0.43 | incomplete | live/CD45+/CD3+/CD56-/TCRgd-/TCR Va7.2-/CD4+/CD8- | CD4+ T Cell
+
+## Details
 
 ### Basic Marker Mapping
 
@@ -158,25 +191,9 @@ The mapping is based on a comprehensive PBMC immunophenotyping dataset (`resourc
   "exactMatch": true
 }
 ```
+:
 
-## Integration with Claude Code
 
-Once configured, you can use the MCP server directly within Claude Code:
-
-1. **Start a mapping session**:
-   ```
-   Map the markers "CD3+ CD4+ CD45RA+ CCR7+" to Cell Ontology terms
-   ```
-
-2. **Search for populations**:
-   ```
-   Search for all memory T cell populations
-   ```
-
-3. **Get detailed information**:
-   ```
-   Show me details about the regulatory T cell population
-   ```
 
 ## Development
 
@@ -190,24 +207,9 @@ python mcp_server.py
 
 ### Adding New Populations
 
-To extend the dataset:
+Please post a ticket to request a new population.  
+Follow the fields in the population example above.
 
-1. Add new population entries to `resources/pbmc_jsonld_cl.json`
-2. Follow the existing JSON-LD structure
-3. Include required fields: `@id`, `rdfs:label`, `cl_id`, `cl_label`, `marker_expression`
-4. Test the mapping with representative marker combinations
-
-### Testing
-
-Create test cases for new marker combinations:
-
-```python
-# Test mapping
-from mcp_server import CellOntologyMapper
-mapper = CellOntologyMapper("resources/pbmc_jsonld_cl.json")
-matches = mapper.find_matches("CD3+ CD4+ CD45RA- CCR7+")
-print(f"Found {len(matches)} matches")
-```
 
 ## Common Use Cases
 
