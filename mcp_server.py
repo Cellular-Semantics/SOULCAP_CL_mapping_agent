@@ -93,7 +93,9 @@ class CellOntologyMapper:
             marker = marker.strip()
             if not marker:
                 continue
-                
+            if marker == 'live':
+                # Skip 'live' marker as it is not a specific marker
+                continue
             if marker.endswith('-') or marker.lower().endswith('negative') or marker.lower().endswith('neg'):
                 # Negative marker
                 clean_marker = re.sub(r'[-]$|negative$|neg$', '', marker, flags=re.IGNORECASE).strip()
