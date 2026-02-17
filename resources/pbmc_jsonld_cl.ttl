@@ -1,0 +1,938 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pbmc: <http://pbmc-standards.org/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://pbmc-standards.org/pbmc-dataset-v1.0> a pbmc:ImmunePopulationDataset ;
+    pbmc:lineageHierarchy ( pbmc:b_cells pbmc:t_cells pbmc:nk_cells pbmc:monocytes pbmc:granulocytes pbmc:dendritic pbmc:ilc ) ;
+    pbmc:markerDefinitions [ obo:PR_000000927 [ dcterms:description "T-cell receptor complex, T cell marker" ;
+                    dcterms:title "CD3 epsilon" ;
+                    schema1:name "CD3" ] ;
+            obo:PR_000000932 [ dcterms:description "T-helper cell surface glycoprotein" ;
+                    dcterms:title "CD4 molecule" ;
+                    schema1:name "CD4" ] ;
+            obo:PR_000000942 [ dcterms:description "Hematopoietic progenitor cell antigen" ;
+                    dcterms:title "CD34 molecule" ;
+                    schema1:name "CD34" ] ;
+            obo:PR_000000949 [ dcterms:description "T-lymphocyte differentiation antigen" ;
+                    dcterms:title "CD8 alpha" ;
+                    schema1:name "CD8" ] ;
+            obo:PR_000000999 [ dcterms:description "ITGAX, dendritic cell marker" ;
+                    dcterms:title "integrin subunit alpha X" ;
+                    schema1:name "CD11c" ] ;
+            obo:PR_000001002 [ dcterms:description "Monocyte differentiation antigen" ;
+                    dcterms:title "CD14 molecule" ;
+                    schema1:name "CD14" ] ;
+            obo:PR_000001005 [ dcterms:description "Low affinity immunoglobulin gamma Fc region receptor III-A" ;
+                    dcterms:title "Fc gamma receptor IIIA" ;
+                    schema1:name "CD16" ] ;
+            obo:PR_000001014 [ dcterms:description "c-Kit, stem cell factor receptor" ;
+                    dcterms:title "KIT proto-oncogene receptor tyrosine kinase" ;
+                    schema1:name "CD117" ] ;
+            obo:PR_000001020 [ dcterms:description "B-lymphocyte antigen CD19, B cell marker" ;
+                    dcterms:title "CD19 molecule" ;
+                    schema1:name "CD19" ] ;
+            obo:PR_000001046 [ dcterms:description "CXCR3, Th1 cell marker" ;
+                    dcterms:title "C-X-C motif chemokine receptor 3" ;
+                    schema1:name "CD183" ] ;
+            obo:PR_000001057 [ dcterms:description "CCR4, Th2 cell marker" ;
+                    dcterms:title "C-C motif chemokine receptor 4" ;
+                    schema1:name "CD194" ] ;
+            obo:PR_000001074 [ dcterms:description "CCR3, eosinophil marker" ;
+                    dcterms:title "C-C motif chemokine receptor 3" ;
+                    schema1:name "CD193" ] ;
+            obo:PR_000001127 [ dcterms:description "IL-7 receptor alpha chain" ;
+                    dcterms:title "interleukin 7 receptor" ;
+                    schema1:name "CD127" ] ;
+            obo:PR_000001185 [ dcterms:description "CXCR5, follicular helper T cell marker" ;
+                    dcterms:title "C-X-C motif chemokine receptor 5" ;
+                    schema1:name "CD185" ] ;
+            obo:PR_000001199 [ dcterms:description "IL-3 receptor alpha chain" ;
+                    dcterms:title "interleukin 3 receptor subunit alpha" ;
+                    schema1:name "CD123" ] ;
+            obo:PR_000001308 [ dcterms:description "CCR7, lymph node homing receptor" ;
+                    dcterms:title "C-C motif chemokine receptor 7" ;
+                    schema1:name "CD197" ] ;
+            obo:PR_000001309 [ dcterms:description "Leukocyte common antigen, pan-leukocyte marker" ;
+                    dcterms:title "protein tyrosine phosphatase receptor type C" ;
+                    schema1:name "CD45" ] ;
+            obo:PR_000001336 [ dcterms:description "CD45 isoform A, naive cell marker" ;
+                    dcterms:title "protein tyrosine phosphatase receptor type C isoform" ;
+                    schema1:name "CD45RA" ] ;
+            obo:PR_000001380 [ dcterms:description "NK cell marker, NCAM1" ;
+                    dcterms:title "neural cell adhesion molecule 1" ;
+                    schema1:name "CD56" ] ;
+            obo:PR_000001432 [ dcterms:description "KLRB1, MAIT cell marker" ;
+                    dcterms:title "killer cell lectin like receptor B1" ;
+                    schema1:name "CD161" ] ;
+            obo:PR_000001823 [ dcterms:description "IL-2 receptor alpha chain" ;
+                    dcterms:title "interleukin 2 receptor subunit alpha" ;
+                    schema1:name "CD25" ] ;
+            obo:PR_000001824 [ dcterms:description "Heat stable antigen" ;
+                    dcterms:title "CD24 molecule" ;
+                    schema1:name "CD24" ] ;
+            obo:PR_000001848 [ dcterms:description "CRTH2, ILC2 marker" ;
+                    dcterms:title "prostaglandin D2 receptor 2" ;
+                    schema1:name "CD294" ] ;
+            obo:PR_000001851 [ dcterms:description "TNF receptor superfamily member 7" ;
+                    dcterms:title "CD27 molecule" ;
+                    schema1:name "CD27" ] ;
+            obo:PR_000001937 [ dcterms:description "ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1" ;
+                    dcterms:title "CD38 molecule" ;
+                    schema1:name "CD38" ] ;
+            obo:PR_000002007 [ dcterms:description "Immunoglobulin A heavy chain" ;
+                    dcterms:title "immunoglobulin heavy constant alpha 1" ;
+                    schema1:name "IgA" ] ;
+            obo:PR_000002015 [ dcterms:description "MHC class II antigen presentation" ;
+                    dcterms:title "major histocompatibility complex class II DR" ;
+                    schema1:name "HLA-DR" ] ;
+            obo:PR_000002109 [ dcterms:description "Immunoglobulin M heavy chain" ;
+                    dcterms:title "immunoglobulin heavy constant mu" ;
+                    schema1:name "IgM" ] ;
+            obo:PR_000002152 [ dcterms:description "Immunoglobulin G heavy chain" ;
+                    dcterms:title "immunoglobulin heavy constant gamma 1" ;
+                    schema1:name "IgG" ] ;
+            obo:PR_000002238 [ dcterms:description "Immunoglobulin D heavy chain" ;
+                    dcterms:title "immunoglobulin heavy constant delta" ;
+                    schema1:name "IgD" ] ] ;
+    pbmc:pathwayClassifications ( pbmc:memory_pathway pbmc:functional_pathway ) ;
+    pbmc:populations ( <http://pbmc-standards.org/live_cells> <http://pbmc-standards.org/asc> <http://pbmc-standards.org/t1_t2_b> <http://pbmc-standards.org/mature_b> <http://pbmc-standards.org/naive_b> <http://pbmc-standards.org/bdn> <http://pbmc-standards.org/bmem> <http://pbmc-standards.org/switched> <http://pbmc-standards.org/iga_mem> <http://pbmc-standards.org/igg_mem> <http://pbmc-standards.org/t_lymph> <http://pbmc-standards.org/cd4t> <http://pbmc-standards.org/cd8t> <http://pbmc-standards.org/cd4_naive> <http://pbmc-standards.org/cd4_cm> <http://pbmc-standards.org/cd4_em> <http://pbmc-standards.org/cd4_temra> <http://pbmc-standards.org/treg> <http://pbmc-standards.org/th1> <http://pbmc-standards.org/th2> <http://pbmc-standards.org/cd8_naive> <http://pbmc-standards.org/cd8_cm> <http://pbmc-standards.org/cd8_em> <http://pbmc-standards.org/cd8_temra> <http://pbmc-standards.org/gdT> <http://pbmc-standards.org/mait> <http://pbmc-standards.org/nk> <http://pbmc-standards.org/nk_bright> <http://pbmc-standards.org/nk_dim> <http://pbmc-standards.org/mono> <http://pbmc-standards.org/classical_mono> <http://pbmc-standards.org/nonclassical_mono> <http://pbmc-standards.org/intermediate_mono> <http://pbmc-standards.org/neutrophil> <http://pbmc-standards.org/eosinophil> <http://pbmc-standards.org/basophil> <http://pbmc-standards.org/pdc> <http://pbmc-standards.org/mdc> <http://pbmc-standards.org/ilc> <http://pbmc-standards.org/ilc1> <http://pbmc-standards.org/ilc2> <http://pbmc-standards.org/ilc3> ) ;
+    pbmc:sampleType "Peripheral Blood Mononuclear Cells" ;
+    pbmc:species "Homo sapiens" ;
+    pbmc:usageGuidelines [ a pbmc:UsageGuidelines ;
+            pbmc:dataSharing "Freely available for research and commercial use" ;
+            pbmc:updates "Check for updates at http://pbmc-standards.org/" ;
+            dcterms:bibliographicCitation "Please cite this dataset when used in publications" ;
+            dcterms:license "https://creativecommons.org/licenses/by/4.0/" ] ;
+    pbmc:validationMetadata [ a pbmc:ValidationInfo ;
+            pbmc:clVersion "2024-05-15" ;
+            pbmc:prVersion "2024-04-01" ;
+            pbmc:validationCriteria [ a pbmc:ValidationCriteria ;
+                    pbmc:broaderMatchCriteria "Population is a subtype of existing CL term" ;
+                    pbmc:exactMatchCriteria "Population directly maps to existing CL term" ;
+                    pbmc:relatedMatchCriteria "Population is related but not exact match to CL term" ] ;
+            pbmc:validationDate "2025-01-01" ;
+            dcterms:creator "PBMC Standards Consortium" ] ;
+    dcterms:created "2025-01-01" ;
+    dcterms:description "Comprehensive characterization of immune cell populations from healthy human peripheral blood mononuclear cells with Cell Ontology integration" ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
+    dcterms:source "Standardized flow cytometry protocols for human PBMC analysis" ;
+    dcterms:title "Standardized Human PBMC Immunophenotyping Dataset with Cell Ontology Integration" ;
+    dcterms:version "1.1.0" .
+
+<http://pbmc-standards.org/asc> a pbmc:ImmunePopulation ;
+    rdfs:label "Antibody Secreting Cell" ;
+    pbmc:conditionalMarkers <http://pbmc-standards.org/> ;
+    pbmc:exactMatch true ;
+    pbmc:exclusionExpression "CD14-/CD3-/CD56-" ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/-/CD27hi/CD38hi" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309,
+        obo:PR_000001851,
+        obo:PR_000001937 ;
+    pbmc:tier 3 ;
+    skos:definition "A lymphocyte of B lineage that is devoted to secreting large amounts of immunoglobulin." ;
+    skos:exactMatch obo:CL_0000946 ;
+    skos:prefLabel "antibody secreting cell" .
+
+<http://pbmc-standards.org/basophil> a pbmc:ImmunePopulation ;
+    rdfs:label "Basophil" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:granulocytes ;
+    pbmc:markerExpression "live/CD45+/CD123+/CD193+/CD16-" ;
+    pbmc:negativeMarkers obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001074,
+        obo:PR_000001199,
+        obo:PR_000001309 ;
+    pbmc:tier 2 ;
+    skos:definition "A mature granulocyte that is readily stainable with basic dyes, has cytoplasmic granules, and functions in allergic reactions." ;
+    skos:exactMatch obo:CL_0000767 ;
+    skos:prefLabel "basophil" .
+
+<http://pbmc-standards.org/bdn> a pbmc:ImmunePopulation ;
+    rdfs:label "Double Negative B Cell" ;
+    pbmc:exactMatch false ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/CD27-/CD38lo/-/CD24-/IgD-/IgM-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380,
+        obo:PR_000001824,
+        obo:PR_000001851 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/mature_b> ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    rdfs:comment "Double negative (IgD-/IgM-) B cell subset" ;
+    skos:broader true ;
+    skos:definition "A B cell that is mature, having left the bone marrow." ;
+    skos:exactMatch obo:CL_0000785 ;
+    skos:prefLabel "mature B cell" .
+
+<http://pbmc-standards.org/cd4_cm> a pbmc:ImmunePopulation ;
+    rdfs:label "CD4+ Central Memory T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4+/CD8-/CD197+/CD45RA-" ;
+    pbmc:negativeMarkers obo:PR_000000949,
+        obo:PR_000001002,
+        obo:PR_000001336 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd4t> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000932,
+        obo:PR_000001308,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A CD4-positive, alpha-beta T cell that is CD45RA-negative, CD45RO-positive, CD62L-positive, and CCR7-positive." ;
+    skos:exactMatch obo:CL_0000904 ;
+    skos:prefLabel "central memory CD4-positive, alpha-beta T cell" .
+
+<http://pbmc-standards.org/cd4_em> a pbmc:ImmunePopulation ;
+    rdfs:label "CD4+ Effector Memory T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4+/CD8-/CD197-/CD45RA-" ;
+    pbmc:negativeMarkers obo:PR_000000949,
+        obo:PR_000001002,
+        obo:PR_000001308,
+        obo:PR_000001336 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd4t> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000932,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A CD4-positive, alpha-beta T cell that is CD45RA-negative, CD45RO-positive, CD62L-negative, and CCR7-negative." ;
+    skos:exactMatch obo:CL_0000905 ;
+    skos:prefLabel "effector memory CD4-positive, alpha-beta T cell" .
+
+<http://pbmc-standards.org/cd4_naive> a pbmc:ImmunePopulation ;
+    rdfs:label "CD4+ Naive T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4+/CD8-/CD197+/CD45RA+" ;
+    pbmc:negativeMarkers obo:PR_000000949,
+        obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd4t> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000932,
+        obo:PR_000001308,
+        obo:PR_000001309,
+        obo:PR_000001336 ;
+    pbmc:tier 4 ;
+    skos:definition "A CD4-positive, alpha-beta T cell that has not been activated in the periphery, is CD45RA-positive, CD45RO-negative, CD62L-positive, and CD127-positive." ;
+    skos:exactMatch obo:CL_0000895 ;
+    skos:prefLabel "naive thymus-derived CD4-positive, alpha-beta T cell" .
+
+<http://pbmc-standards.org/cd4_temra> a pbmc:ImmunePopulation ;
+    rdfs:label "CD4+ Terminal Effector Memory T Cell" ;
+    pbmc:exactMatch false ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4+/CD8-/CD197-/CD45RA+" ;
+    pbmc:negativeMarkers obo:PR_000000949,
+        obo:PR_000001002,
+        obo:PR_000001308 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd4t> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000932,
+        obo:PR_000001309,
+        obo:PR_000001336 ;
+    pbmc:tier 4 ;
+    rdfs:comment "CD4+ subset of TEMRA cells" ;
+    skos:broader true ;
+    skos:definition "An alpha-beta T cell that is CD45RA-positive, CD62L-negative, and CCR7-negative." ;
+    skos:exactMatch obo:CL_0000907 ;
+    skos:prefLabel "CD45RA-positive, CD62L-negative, CCR7-negative, alpha-beta T cell" .
+
+<http://pbmc-standards.org/cd8_cm> a pbmc:ImmunePopulation ;
+    rdfs:label "CD8+ Central Memory T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4-/CD8+/CD197+/CD45RA-" ;
+    pbmc:negativeMarkers obo:PR_000000932,
+        obo:PR_000001002,
+        obo:PR_000001336 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd8t> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000949,
+        obo:PR_000001308,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A CD8-positive, alpha-beta T cell that is CD45RA-negative, CD45RO-positive, CD62L-positive, and CCR7-positive." ;
+    skos:exactMatch obo:CL_0000909 ;
+    skos:prefLabel "central memory CD8-positive, alpha-beta T cell" .
+
+<http://pbmc-standards.org/cd8_em> a pbmc:ImmunePopulation ;
+    rdfs:label "CD8+ Effector Memory T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4-/CD8+/CD197-/CD45RA-" ;
+    pbmc:negativeMarkers obo:PR_000000932,
+        obo:PR_000001002,
+        obo:PR_000001308,
+        obo:PR_000001336 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd8t> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000949,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A CD8-positive, alpha-beta T cell that is CD45RA-negative, CD45RO-positive, CD62L-negative, and CCR7-negative." ;
+    skos:exactMatch obo:CL_0000913 ;
+    skos:prefLabel "effector memory CD8-positive, alpha-beta T cell" .
+
+<http://pbmc-standards.org/cd8_naive> a pbmc:ImmunePopulation ;
+    rdfs:label "CD8+ Naive T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4-/CD8+/CD197+/CD45RA+" ;
+    pbmc:negativeMarkers obo:PR_000000932,
+        obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd8t> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000949,
+        obo:PR_000001308,
+        obo:PR_000001309,
+        obo:PR_000001336 ;
+    pbmc:tier 4 ;
+    skos:definition "A CD8-positive, alpha-beta T cell that has not been activated in the periphery, is CD45RA-positive, CD45RO-negative, CD62L-positive, and CD127-positive." ;
+    skos:exactMatch obo:CL_0000900 ;
+    skos:prefLabel "naive thymus-derived CD8-positive, alpha-beta T cell" .
+
+<http://pbmc-standards.org/cd8_temra> a pbmc:ImmunePopulation ;
+    rdfs:label "CD8+ Terminal Effector Memory T Cell" ;
+    pbmc:exactMatch false ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4-/CD8+/CD197-/CD45RA+" ;
+    pbmc:negativeMarkers obo:PR_000000932,
+        obo:PR_000001002,
+        obo:PR_000001308 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd8t> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000949,
+        obo:PR_000001309,
+        obo:PR_000001336 ;
+    pbmc:tier 4 ;
+    rdfs:comment "CD8+ subset of TEMRA cells" ;
+    skos:broader true ;
+    skos:definition "An alpha-beta T cell that is CD45RA-positive, CD62L-negative, and CCR7-negative." ;
+    skos:exactMatch obo:CL_0000907 ;
+    skos:prefLabel "CD45RA-positive, CD62L-negative, CCR7-negative, alpha-beta T cell" .
+
+<http://pbmc-standards.org/classical_mono> a pbmc:ImmunePopulation ;
+    rdfs:label "Classical Monocyte" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:monocytes ;
+    pbmc:markerExpression "live/CD45+/CD14+/CD16-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001005,
+        obo:PR_000001020,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/mono> ;
+    pbmc:positiveMarkers obo:PR_000001002,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A monocyte that is CD14-positive and CD16-negative with a central role in antimicrobial responses and wound healing." ;
+    skos:exactMatch obo:CL_0000860 ;
+    skos:prefLabel "classical monocyte" .
+
+<http://pbmc-standards.org/eosinophil> a pbmc:ImmunePopulation ;
+    rdfs:label "Eosinophil" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:granulocytes ;
+    pbmc:markerExpression "live/CD45+/CD193+/CD16-/CD123-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001020,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001074,
+        obo:PR_000001309 ;
+    pbmc:tier 2 ;
+    skos:definition "A mature granulocyte that is readily stainable with acidic dyes, contains large granules, and has a bilobed nucleus." ;
+    skos:exactMatch obo:CL_0000771 ;
+    skos:prefLabel "eosinophil" .
+
+<http://pbmc-standards.org/gdT> a pbmc:ImmunePopulation ;
+    rdfs:label "Gamma Delta T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:gd_t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/TCRgd+" ;
+    pbmc:negativeMarkers obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/t_lymph> ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A T cell that expresses a gamma-delta T cell receptor complex." ;
+    skos:exactMatch obo:CL_0000798 ;
+    skos:prefLabel "gamma-delta T cell" .
+
+<http://pbmc-standards.org/iga_mem> a pbmc:ImmunePopulation ;
+    rdfs:label "IgA Memory B Cell" ;
+    pbmc:exactMatch false ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/CD27+/CD38lo/-/IgD-/IgM-/IgA+/IgG-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380,
+        obo:PR_000002109,
+        obo:PR_000002152,
+        obo:PR_000002238 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/switched> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309,
+        obo:PR_000001851,
+        obo:PR_000002007 ;
+    pbmc:tier 4 ;
+    rdfs:comment "IgA-expressing class-switched memory B cell" ;
+    skos:broader true ;
+    skos:definition "A memory B cell that has undergone Ig class switching and expresses IgA." ;
+    skos:exactMatch obo:CL_0000972 ;
+    skos:prefLabel "class switched memory B cell" .
+
+<http://pbmc-standards.org/igg_mem> a pbmc:ImmunePopulation ;
+    rdfs:label "IgG Memory B Cell" ;
+    pbmc:exactMatch false ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/CD27+/CD38lo/-/IgD-/IgM-/IgA-/IgG+" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380,
+        obo:PR_000002007,
+        obo:PR_000002109,
+        obo:PR_000002238 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/switched> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309,
+        obo:PR_000001851,
+        obo:PR_000002152 ;
+    pbmc:tier 4 ;
+    rdfs:comment "IgG-expressing class-switched memory B cell" ;
+    skos:broader true ;
+    skos:definition "A memory B cell that has undergone Ig class switching and expresses IgG." ;
+    skos:exactMatch obo:CL_0000972 ;
+    skos:prefLabel "class switched memory B cell" .
+
+<http://pbmc-standards.org/ilc1> a pbmc:ImmunePopulation ;
+    rdfs:label "Type 1 Innate Lymphoid Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:ilc ;
+    pbmc:markerExpression "live/CD45+/CD3-/CD127+/CD56-/CD117-/CD294-" ;
+    pbmc:negativeMarkers obo:PR_000000942,
+        obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/ilc> ;
+    pbmc:positiveMarkers obo:PR_000001127,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "An innate lymphoid cell that is capable of producing interferon-gamma and lacks expression of transcription factors that define ILC2s and ILC3s." ;
+    skos:exactMatch obo:CL_0001141 ;
+    skos:prefLabel "type 1 innate lymphoid cell" .
+
+<http://pbmc-standards.org/ilc2> a pbmc:ImmunePopulation ;
+    rdfs:label "Type 2 Innate Lymphoid Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:ilc ;
+    pbmc:markerExpression "live/CD45+/CD3-/CD127+/CD56-/CD117lo/-/CD294+" ;
+    pbmc:negativeMarkers obo:PR_000000942,
+        obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/ilc> ;
+    pbmc:positiveMarkers obo:PR_000001127,
+        obo:PR_000001309,
+        obo:PR_000001848 ;
+    pbmc:tier 4 ;
+    skos:definition "An innate lymphoid cell that is capable of producing IL-5, IL-13, and IL-4 and requires transcription factor Gata3 for development." ;
+    skos:exactMatch obo:CL_0001067 ;
+    skos:prefLabel "type 2 innate lymphoid cell" .
+
+<http://pbmc-standards.org/ilc3> a pbmc:ImmunePopulation ;
+    rdfs:label "Type 3 Innate Lymphoid Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:ilc ;
+    pbmc:markerExpression "live/CD45+/CD3-/CD127+/CD56+/-/CD117+/CD294-" ;
+    pbmc:negativeMarkers obo:PR_000000942,
+        obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/ilc> ;
+    pbmc:positiveMarkers obo:PR_000001014,
+        obo:PR_000001127,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    rdfs:comment "No ILC3b in circulation, add CD336 for tissue" ;
+    skos:definition "An innate lymphoid cell that is capable of producing IL-17 and/or IL-22 and requires transcription factor Ror-gt for development." ;
+    skos:exactMatch obo:CL_0001068 ;
+    skos:prefLabel "type 3 innate lymphoid cell" .
+
+<http://pbmc-standards.org/intermediate_mono> a pbmc:ImmunePopulation ;
+    rdfs:label "Intermediate Monocyte" ;
+    pbmc:exactMatch false ;
+    pbmc:lineage pbmc:monocytes ;
+    pbmc:markerExpression "live/CD45+/CD14+/CD16hi" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001020,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/mono> ;
+    pbmc:positiveMarkers obo:PR_000001002,
+        obo:PR_000001005,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    rdfs:comment "Intermediate monocyte subset with mixed phenotype" ;
+    skos:broader true ;
+    skos:definition "A monocyte that is CD14-positive, CD16-positive." ;
+    skos:exactMatch obo:CL_0000875 ;
+    skos:prefLabel "non-classical monocyte" .
+
+<http://pbmc-standards.org/mait> a pbmc:ImmunePopulation ;
+    rdfs:label "MAIT Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:mait_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD56+/-/TCRgd-/TCR Va7.2+/CD161+" ;
+    pbmc:negativeMarkers obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/t_lymph> ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000001309,
+        obo:PR_000001432 ;
+    pbmc:tier 4 ;
+    skos:definition "An invariant T cell that is found in the lamina propria of mucosal tissues, is CD4-negative, CD8-positive, and is capable of mounting an immune response to mucosal pathogens." ;
+    skos:exactMatch obo:CL_0000940 ;
+    skos:prefLabel "mucosal invariant T cell" .
+
+<http://pbmc-standards.org/mdc> a pbmc:ImmunePopulation ;
+    rdfs:label "Myeloid Dendritic Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:dendritic ;
+    pbmc:markerExpression "live/CD45+/CD3-/CD11c+/HLA-DR+" ;
+    pbmc:negativeMarkers obo:PR_000001020,
+        obo:PR_000001127,
+        obo:PR_000001199,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000000999,
+        obo:PR_000001309,
+        obo:PR_000002015 ;
+    pbmc:tier 2 ;
+    skos:definition "A dendritic cell of the myeloid lineage that is CD11c-positive." ;
+    skos:exactMatch obo:CL_0000782 ;
+    skos:prefLabel "myeloid dendritic cell" .
+
+<http://pbmc-standards.org/naive_b> a pbmc:ImmunePopulation ;
+    rdfs:label "Naive B Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/CD27-/CD38lo/-/CD24-/IgD+/IgMlo" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380,
+        obo:PR_000001824,
+        obo:PR_000001851 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/mature_b> ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309,
+        obo:PR_000002109,
+        obo:PR_000002238 ;
+    pbmc:tier 4 ;
+    skos:definition "A mature B cell that has the phenotype IgD-positive, CD27-negative, and IgM-positive." ;
+    skos:exactMatch obo:CL_0000788 ;
+    skos:prefLabel "naive B cell" .
+
+<http://pbmc-standards.org/neutrophil> a pbmc:ImmunePopulation ;
+    rdfs:label "Neutrophil" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:granulocytes ;
+    pbmc:markerExpression "live/CD45+/CD193-/CD16hi" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001020,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001005,
+        obo:PR_000001309 ;
+    pbmc:tier 2 ;
+    skos:definition "A mature granulocyte that is readily stainable with neutral dyes, which is most abundant in peripheral blood and contains a multilobed nucleus and cytoplasmic granules." ;
+    skos:exactMatch obo:CL_0000775 ;
+    skos:prefLabel "neutrophil" .
+
+<http://pbmc-standards.org/nk_bright> a pbmc:ImmunePopulation ;
+    rdfs:label "CD56bright NK Cell" ;
+    pbmc:exactMatch false ;
+    pbmc:lineage pbmc:nk_cells ;
+    pbmc:markerExpression "live/CD45+/CD56hi/CD127-/lo/CD16-/lo/CD57-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001020,
+        obo:PR_000001199 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/nk> ;
+    pbmc:positiveMarkers obo:PR_000001127,
+        obo:PR_000001309,
+        obo:PR_000001380 ;
+    pbmc:tier 4 ;
+    rdfs:comment "CD56bright NK subset with regulatory function" ;
+    skos:broader true ;
+    skos:definition "A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic activation." ;
+    skos:exactMatch obo:CL_0000623 ;
+    skos:prefLabel "natural killer cell" .
+
+<http://pbmc-standards.org/nk_dim> a pbmc:ImmunePopulation ;
+    rdfs:label "CD56dim NK Cell" ;
+    pbmc:exactMatch false ;
+    pbmc:lineage pbmc:nk_cells ;
+    pbmc:markerExpression "live/CD45+/CD56+/dim/CD127-/lo/CD16+" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001020,
+        obo:PR_000001199 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/nk> ;
+    pbmc:positiveMarkers obo:PR_000001005,
+        obo:PR_000001309,
+        obo:PR_000001380 ;
+    pbmc:tier 4 ;
+    rdfs:comment "CD56dim NK subset with cytotoxic function" ;
+    skos:broader true ;
+    skos:definition "A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic activation." ;
+    skos:exactMatch obo:CL_0000623 ;
+    skos:prefLabel "natural killer cell" .
+
+<http://pbmc-standards.org/nonclassical_mono> a pbmc:ImmunePopulation ;
+    rdfs:label "Non-Classical Monocyte" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:monocytes ;
+    pbmc:markerExpression "live/CD45+/CD14lo/CD16+" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001020,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/mono> ;
+    pbmc:positiveMarkers obo:PR_000001005,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A monocyte that is CD14-low, CD16-positive and has a patrolling behavior." ;
+    skos:exactMatch obo:CL_0000875 ;
+    skos:prefLabel "non-classical monocyte" .
+
+<http://pbmc-standards.org/pdc> a pbmc:ImmunePopulation ;
+    rdfs:label "Plasmacytoid Dendritic Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:dendritic ;
+    pbmc:markerExpression "live/CD45+/CD123hi/CD193-/CD16-" ;
+    pbmc:negativeMarkers obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001199,
+        obo:PR_000001309 ;
+    pbmc:tier 2 ;
+    skos:definition "A dendritic cell type of distinct morphology, localization, and surface marker expression (CD123-positive) from other dendritic cell types and associated with early stage immune responses." ;
+    skos:exactMatch obo:CL_0000784 ;
+    skos:prefLabel "plasmacytoid dendritic cell" .
+
+<http://pbmc-standards.org/t1_t2_b> a pbmc:ImmunePopulation ;
+    rdfs:label "Transitional B Cell Type 1/2" ;
+    pbmc:conditionalMarkers <http://pbmc-standards.org/> ;
+    pbmc:exactMatch true ;
+    pbmc:exclusionExpression "CD14-/CD3-/CD56-/CD27-" ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/CD27-/CD38hi" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380,
+        obo:PR_000001851 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309,
+        obo:PR_000001937 ;
+    pbmc:tier 2 ;
+    skos:definition "An immature B cell of an intermediate stage between the pre-B cell stage and the mature naive stage with the phenotype surface IgM-positive and CD19-positive." ;
+    skos:exactMatch obo:CL_0000818 ;
+    skos:prefLabel "transitional stage B cell" .
+
+pbmc:functional_pathway a pbmc:PathwayType ;
+    rdfs:label "Functional Subset Pathway" ;
+    pbmc:subsets "tfh",
+        "th1",
+        "th17",
+        "th2",
+        "treg" ;
+    dcterms:description "T cell functional subset classifications" .
+
+pbmc:memory_pathway a pbmc:PathwayType ;
+    rdfs:label "Memory Differentiation Pathway" ;
+    pbmc:stages "central_memory",
+        "effector_memory",
+        "naive",
+        "terminal_effector" ;
+    dcterms:description "T cell memory differentiation states" .
+
+<http://pbmc-standards.org/th1> a pbmc:ImmunePopulation ;
+    rdfs:label "CD4+ Th1 Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4+/CD8-/CD185-/CD183+/CD196-" ;
+    pbmc:negativeMarkers obo:PR_000000949,
+        obo:PR_000001002,
+        obo:PR_000001185 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd4t> ;
+    pbmc:pathway "functional" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000932,
+        obo:PR_000001046,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A CD4-positive, alpha-beta T cell that has the phenotype T-bet-positive, CXCR3-positive, CCR6-negative, and is capable of producing interferon-gamma." ;
+    skos:exactMatch obo:CL_0000545 ;
+    skos:prefLabel "T-helper 1 cell" .
+
+<http://pbmc-standards.org/th2> a pbmc:ImmunePopulation ;
+    rdfs:label "CD4+ Th2 Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4+/CD8-/CD185-/CD183-/CD196-/CD194+" ;
+    pbmc:negativeMarkers obo:PR_000000949,
+        obo:PR_000001002,
+        obo:PR_000001046,
+        obo:PR_000001185 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd4t> ;
+    pbmc:pathway "functional" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000932,
+        obo:PR_000001057,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A CD4-positive, alpha-beta T cell that has the phenotype GATA-3-positive, CCR4-positive, CCR6-negative, and is capable of producing interleukin-4." ;
+    skos:exactMatch obo:CL_0000546 ;
+    skos:prefLabel "T-helper 2 cell" .
+
+<http://pbmc-standards.org/treg> a pbmc:ImmunePopulation ;
+    rdfs:label "Regulatory T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD4+/CD8-/CD25+/CD127lo/-" ;
+    pbmc:negativeMarkers obo:PR_000000949,
+        obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/cd4t> ;
+    pbmc:pathway "functional" ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000932,
+        obo:PR_000001309,
+        obo:PR_000001823 ;
+    pbmc:tier 4 ;
+    skos:definition "A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release." ;
+    skos:exactMatch obo:CL_0000815 ;
+    skos:prefLabel "regulatory T cell" .
+
+<http://pbmc-standards.org/bmem> a pbmc:ImmunePopulation ;
+    rdfs:label "Memory B Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/CD27+/CD38lo/-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309,
+        obo:PR_000001851 ;
+    pbmc:tier 2 ;
+    skos:definition "A mature B cell that is long-lived, readily activated upon re-encounter of its antigenic determinant, and has the phenotype CD27-positive." ;
+    skos:exactMatch obo:CL_0000787 ;
+    skos:prefLabel "memory B cell" .
+
+<http://pbmc-standards.org/mature_b> a pbmc:ImmunePopulation ;
+    rdfs:label "Mature B Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:exclusionExpression "CD14-/CD3-/CD56-/CD27-" ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/CD27-/CD38lo/-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380,
+        obo:PR_000001851 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309 ;
+    pbmc:tier 2 ;
+    skos:definition "A B cell that is mature, having left the bone marrow. Initially, these cells are IgM+, IgD+, CD23+, CD5-, CD10-, surface Ig+." ;
+    skos:exactMatch obo:CL_0000785 ;
+    skos:prefLabel "mature B cell" .
+
+<http://pbmc-standards.org/nk> a pbmc:ImmunePopulation ;
+    rdfs:label "Natural Killer Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:nk_cells ;
+    pbmc:markerExpression "live/CD45+/CD56+/hi/CD127-/lo" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001020,
+        obo:PR_000001199 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001309,
+        obo:PR_000001380 ;
+    pbmc:tier 2 ;
+    skos:definition "A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic activation via germline encoded activation receptors and also regulate immune responses via cytokine release and direct contact with other cells." ;
+    skos:exactMatch obo:CL_0000623 ;
+    skos:prefLabel "natural killer cell" .
+
+<http://pbmc-standards.org/switched> a pbmc:ImmunePopulation ;
+    rdfs:label "Class-Switched Memory B Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:b_cells ;
+    pbmc:markerExpression "live/CD45+/CD19+/CD27+/CD38lo/-/IgD-/IgM-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001002,
+        obo:PR_000001380,
+        obo:PR_000002109,
+        obo:PR_000002238 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/bmem> ;
+    pbmc:pathway "memory" ;
+    pbmc:positiveMarkers obo:PR_000001020,
+        obo:PR_000001309,
+        obo:PR_000001851 ;
+    pbmc:tier 4 ;
+    skos:definition "A memory B cell that has undergone Ig class switching and therefore does not express IgM or IgD on the cell surface." ;
+    skos:exactMatch obo:CL_0000972 ;
+    skos:prefLabel "class switched memory B cell" .
+
+pbmc:dendritic a pbmc:LineageType ;
+    rdfs:label "Dendritic Cell Lineage" ;
+    dcterms:description "Professional antigen-presenting cells" ;
+    skos:exactMatch obo:CL_0000451 ;
+    skos:prefLabel "dendritic cell" .
+
+<http://pbmc-standards.org/ilc> a pbmc:ImmunePopulation ;
+    rdfs:label "Innate Lymphoid Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:ilc ;
+    pbmc:markerExpression "live/CD45+/CD3-/CD127+" ;
+    pbmc:negativeMarkers obo:PR_000000942,
+        obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001127,
+        obo:PR_000001309 ;
+    pbmc:tier 2 ;
+    skos:definition "A lymphocyte that lacks antigen specific receptors and is part of the innate immune system." ;
+    skos:exactMatch obo:CL_0001065 ;
+    skos:prefLabel "innate lymphoid cell" .
+
+<http://pbmc-standards.org/mono> a pbmc:ImmunePopulation ;
+    rdfs:label "Monocyte" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:monocytes ;
+    pbmc:markerExpression "live/CD45+/CD14lo/+/CD11c+/-" ;
+    pbmc:negativeMarkers obo:PR_000000927,
+        obo:PR_000001020,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000001002,
+        obo:PR_000001309 ;
+    pbmc:tier 2 ;
+    skos:definition "A mononuclear phagocyte that is a mature or maturing myeloid cell, typically large, prepare by the bone marrow from a monoblast and found in the blood." ;
+    skos:exactMatch obo:CL_0000576 ;
+    skos:prefLabel "monocyte" .
+
+pbmc:granulocytes a pbmc:LineageType ;
+    rdfs:label "Granulocyte Lineage" ;
+    dcterms:description "Polymorphonuclear leukocyte lineage" ;
+    skos:exactMatch obo:CL_0000094 ;
+    skos:prefLabel "granulocyte" .
+
+pbmc:nk_cells a pbmc:LineageType ;
+    rdfs:label "NK Cell Lineage" ;
+    dcterms:description "Innate lymphoid cytotoxic cells" ;
+    skos:exactMatch obo:CL_0000623 ;
+    skos:prefLabel "natural killer cell" .
+
+<http://pbmc-standards.org/cd8t> a pbmc:ImmunePopulation ;
+    rdfs:label "CD8+ T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD56-/TCRgd-/TCR Va7.2-/CD4-/CD8+" ;
+    pbmc:negativeMarkers obo:PR_000000932,
+        obo:PR_000001002,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/t_lymph> ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000949,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A mature alpha-beta T cell that expresses an alpha-beta T cell receptor and the CD8 coreceptor." ;
+    skos:exactMatch obo:CL_0000625 ;
+    skos:prefLabel "CD8-positive, alpha-beta T cell" .
+
+<http://pbmc-standards.org/t_lymph> a pbmc:ImmunePopulation ;
+    rdfs:label "T Lymphocyte" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+" ;
+    pbmc:negativeMarkers obo:PR_000001002 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/live_cells> ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000001309 ;
+    pbmc:tier 2 ;
+    skos:definition "A type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex." ;
+    skos:exactMatch obo:CL_0000084 ;
+    skos:prefLabel "T cell" .
+
+pbmc:ilc a pbmc:LineageType ;
+    rdfs:label "ILC Lineage" ;
+    dcterms:description "Innate immune lymphocytes" ;
+    skos:exactMatch obo:CL_0001065 ;
+    skos:prefLabel "innate lymphoid cell" .
+
+pbmc:monocytes a pbmc:LineageType ;
+    rdfs:label "Monocyte Lineage" ;
+    dcterms:description "Mononuclear phagocyte lineage" ;
+    skos:exactMatch obo:CL_0000576 ;
+    skos:prefLabel "monocyte" .
+
+<http://pbmc-standards.org/cd4t> a pbmc:ImmunePopulation ;
+    rdfs:label "CD4+ T Cell" ;
+    pbmc:exactMatch true ;
+    pbmc:lineage pbmc:t_cells ;
+    pbmc:markerExpression "live/CD45+/CD3+/CD56-/TCRgd-/TCR Va7.2-/CD4+/CD8-" ;
+    pbmc:negativeMarkers obo:PR_000000949,
+        obo:PR_000001002,
+        obo:PR_000001380 ;
+    pbmc:parentPopulation <http://pbmc-standards.org/t_lymph> ;
+    pbmc:positiveMarkers obo:PR_000000927,
+        obo:PR_000000932,
+        obo:PR_000001309 ;
+    pbmc:tier 4 ;
+    skos:definition "A mature alpha-beta T cell that expresses an alpha-beta T cell receptor and the CD4 coreceptor." ;
+    skos:exactMatch obo:CL_0000624 ;
+    skos:prefLabel "CD4-positive, alpha-beta T cell" .
+
+pbmc:b_cells a pbmc:LineageType ;
+    rdfs:label "B Cell Lineage" ;
+    dcterms:description "B lymphocyte lineage from bone marrow" ;
+    skos:exactMatch obo:CL_0000236 ;
+    skos:prefLabel "B cell" .
+
+<http://pbmc-standards.org/live_cells> a pbmc:RootPopulation ;
+    rdfs:label "Live Cells" ;
+    pbmc:exactMatch true ;
+    pbmc:markers "Fixable viability dye negative" ;
+    pbmc:tier 1 ;
+    dcterms:description "Live cell gate excluding dead cells and debris using fixable viability dye exclusion" ;
+    skos:definition "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' and unicellular organisms 'in environment'." ;
+    skos:exactMatch obo:CL_0000003 ;
+    skos:prefLabel "native cell" .
+
+pbmc:t_cells a pbmc:LineageType ;
+    rdfs:label "T Cell Lineage" ;
+    dcterms:description "T lymphocyte lineage from thymus" ;
+    skos:exactMatch obo:CL_0000084 ;
+    skos:prefLabel "T cell" .
+

@@ -7,6 +7,10 @@
       "env": {
         "PYTHONPATH": ".venv/bin"
       }
+    },
+    "ols4": {
+      "type": "http",
+      "url": "https://wwwdev.ebi.ac.uk/ols4/api/mcp"
     }
   }
 }

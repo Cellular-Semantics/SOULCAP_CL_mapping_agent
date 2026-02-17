@@ -30,15 +30,30 @@
     "exactMatch": "pbmc:exactMatch",
     "markers": "pbmc:markers",
     "marker_expression": "pbmc:markerExpression",
-    "positive_markers": "pbmc:positiveMarkers",
-    "negative_markers": "pbmc:negativeMarkers",
+    "positive_markers": {
+      "@id": "pbmc:positiveMarkers",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "negative_markers": {
+      "@id": "pbmc:negativeMarkers",
+      "@container": "@list",
+      "@type": "@id"
+    },
     "exclusion_expression": "pbmc:exclusionExpression",
-    "conditional_markers": "pbmc:conditionalMarkers",
+    "conditional_markers": {
+      "@id": "pbmc:conditionalMarkers",
+      "@container": "@list",
+      "@type": "@id"
+    },
     "parent_population": {
       "@id": "pbmc:parentPopulation",
       "@type": "@id"
     },
-    "lineage": "pbmc:lineage",
+    "lineage": {
+      "@id": "pbmc:lineage",
+      "@type": "@id"
+    },
     "tier": "pbmc:tier",
     "pathway": "pbmc:pathway",
     "sample_type": "pbmc:sampleType",

@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:pbmc="http://pbmc-standards.org/terms/"
+  xmlns:obo="http://purl.obolibrary.org/obo/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:schema1="http://schema.org/"
+>
+  <pbmc:ImmunePopulationDataset rdf:about="http://pbmc-standards.org/pbmc-dataset-v1.0">
+    <dcterms:title>Standardized Human PBMC Immunophenotyping Dataset with Cell Ontology Integration</dcterms:title>
+    <dcterms:description>Comprehensive characterization of immune cell populations from healthy human peripheral blood mononuclear cells with Cell Ontology integration</dcterms:description>
+    <dcterms:version>1.1.0</dcterms:version>
+    <dcterms:created>2025-01-01</dcterms:created>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+    <dcterms:source>Standardized flow cytometry protocols for human PBMC analysis</dcterms:source>
+    <pbmc:sampleType>Peripheral Blood Mononuclear Cells</pbmc:sampleType>
+    <pbmc:species>Homo sapiens</pbmc:species>
+    <pbmc:populations rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://pbmc-standards.org/live_cells"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/asc"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/t1_t2_b"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/mature_b"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/naive_b"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/bdn"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/bmem"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/switched"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/iga_mem"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/igg_mem"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/t_lymph"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd4t"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd8t"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd4_naive"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd4_cm"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd4_em"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd4_temra"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/treg"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/th1"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/th2"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd8_naive"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd8_cm"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd8_em"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/cd8_temra"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/gdT"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/mait"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/nk"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/nk_bright"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/nk_dim"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/mono"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/classical_mono"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/nonclassical_mono"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/intermediate_mono"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/neutrophil"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/eosinophil"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/basophil"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/pdc"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/mdc"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/ilc"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/ilc1"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/ilc2"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/ilc3"/>
+    </pbmc:populations>
+    <pbmc:markerDefinitions>
+      <rdf:Description rdf:nodeID="N37bae08494514bd0be7ef2995f0c5b7e">
+        <obo:PR_000001432>
+          <rdf:Description rdf:nodeID="N5874ec1d7a104903913e9e9dea15fd69">
+            <schema1:name>CD161</schema1:name>
+            <dcterms:title>killer cell lectin like receptor B1</dcterms:title>
+            <dcterms:description>KLRB1, MAIT cell marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001432>
+        <obo:PR_000001057>
+          <rdf:Description rdf:nodeID="N5ec1980ff95440e7808f57a79c1dd47e">
+            <schema1:name>CD194</schema1:name>
+            <dcterms:title>C-C motif chemokine receptor 4</dcterms:title>
+            <dcterms:description>CCR4, Th2 cell marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001057>
+        <obo:PR_000001380>
+          <rdf:Description rdf:nodeID="N39d0ecf6bcdc4a56a15065761c05c17e">
+            <schema1:name>CD56</schema1:name>
+            <dcterms:title>neural cell adhesion molecule 1</dcterms:title>
+            <dcterms:description>NK cell marker, NCAM1</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001380>
+        <obo:PR_000000932>
+          <rdf:Description rdf:nodeID="Nc535c4db085948918d04acf0c54c818d">
+            <schema1:name>CD4</schema1:name>
+            <dcterms:title>CD4 molecule</dcterms:title>
+            <dcterms:description>T-helper cell surface glycoprotein</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000000932>
+        <obo:PR_000001020>
+          <rdf:Description rdf:nodeID="Ne5663ef2c96f4bb08f5eb39e3e68aaf3">
+            <schema1:name>CD19</schema1:name>
+            <dcterms:title>CD19 molecule</dcterms:title>
+            <dcterms:description>B-lymphocyte antigen CD19, B cell marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001020>
+        <obo:PR_000001074>
+          <rdf:Description rdf:nodeID="N2dfeccf6b7ee442bbed16186d365aa64">
+            <schema1:name>CD193</schema1:name>
+            <dcterms:title>C-C motif chemokine receptor 3</dcterms:title>
+            <dcterms:description>CCR3, eosinophil marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001074>
+        <obo:PR_000001005>
+          <rdf:Description rdf:nodeID="N7481933ca4a94d6db9ccfec3f1aed75a">
+            <schema1:name>CD16</schema1:name>
+            <dcterms:title>Fc gamma receptor IIIA</dcterms:title>
+            <dcterms:description>Low affinity immunoglobulin gamma Fc region receptor III-A</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001005>
+        <obo:PR_000001848>
+          <rdf:Description rdf:nodeID="Nb1b0fc9e469843f79683cc4eb6836486">
+            <schema1:name>CD294</schema1:name>
+            <dcterms:title>prostaglandin D2 receptor 2</dcterms:title>
+            <dcterms:description>CRTH2, ILC2 marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001848>
+        <obo:PR_000000942>
+          <rdf:Description rdf:nodeID="N22c563fbe3a94fc9a47555a4bc25b62d">
+            <schema1:name>CD34</schema1:name>
+            <dcterms:title>CD34 molecule</dcterms:title>
+            <dcterms:description>Hematopoietic progenitor cell antigen</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000000942>
+        <obo:PR_000001336>
+          <rdf:Description rdf:nodeID="N3943f38b85d6452e8496d1eed5ec4d52">
+            <schema1:name>CD45RA</schema1:name>
+            <dcterms:title>protein tyrosine phosphatase receptor type C isoform</dcterms:title>
+            <dcterms:description>CD45 isoform A, naive cell marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001336>
+        <obo:PR_000001824>
+          <rdf:Description rdf:nodeID="N23c2e54762cb4c1eb5b837557f9d2417">
+            <schema1:name>CD24</schema1:name>
+            <dcterms:title>CD24 molecule</dcterms:title>
+            <dcterms:description>Heat stable antigen</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001824>
+        <obo:PR_000002015>
+          <rdf:Description rdf:nodeID="N450e32f041cc47548066b8303c8b5f30">
+            <schema1:name>HLA-DR</schema1:name>
+            <dcterms:title>major histocompatibility complex class II DR</dcterms:title>
+            <dcterms:description>MHC class II antigen presentation</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000002015>
+        <obo:PR_000002238>
+          <rdf:Description rdf:nodeID="N06be9e651c7341d09d17214143ebb993">
+            <schema1:name>IgD</schema1:name>
+            <dcterms:title>immunoglobulin heavy constant delta</dcterms:title>
+            <dcterms:description>Immunoglobulin D heavy chain</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000002238>
+        <obo:PR_000001199>
+          <rdf:Description rdf:nodeID="N79f63578a6ea41ca99cb1e59cd8fd327">
+            <schema1:name>CD123</schema1:name>
+            <dcterms:title>interleukin 3 receptor subunit alpha</dcterms:title>
+            <dcterms:description>IL-3 receptor alpha chain</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001199>
+        <obo:PR_000001046>
+          <rdf:Description rdf:nodeID="N315d6a269722448780dc7b920a76a570">
+            <schema1:name>CD183</schema1:name>
+            <dcterms:title>C-X-C motif chemokine receptor 3</dcterms:title>
+            <dcterms:description>CXCR3, Th1 cell marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001046>
+        <obo:PR_000002152>
+          <rdf:Description rdf:nodeID="Nfcf5a2c17408443fb5312d48378ea031">
+            <schema1:name>IgG</schema1:name>
+            <dcterms:title>immunoglobulin heavy constant gamma 1</dcterms:title>
+            <dcterms:description>Immunoglobulin G heavy chain</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000002152>
+        <obo:PR_000001309>
+          <rdf:Description rdf:nodeID="N51e34fdd82e14903a86d5d7c00b3b6c0">
+            <schema1:name>CD45</schema1:name>
+            <dcterms:title>protein tyrosine phosphatase receptor type C</dcterms:title>
+            <dcterms:description>Leukocyte common antigen, pan-leukocyte marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001309>
+        <obo:PR_000001127>
+          <rdf:Description rdf:nodeID="Ncdb2b303257e42d490757ab1f2cd1a3e">
+            <schema1:name>CD127</schema1:name>
+            <dcterms:title>interleukin 7 receptor</dcterms:title>
+            <dcterms:description>IL-7 receptor alpha chain</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001127>
+        <obo:PR_000000999>
+          <rdf:Description rdf:nodeID="Nd836b21ba5994074a429d22eda99b407">
+            <schema1:name>CD11c</schema1:name>
+            <dcterms:title>integrin subunit alpha X</dcterms:title>
+            <dcterms:description>ITGAX, dendritic cell marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000000999>
+        <obo:PR_000001937>
+          <rdf:Description rdf:nodeID="Nd1315839cb29435e8a7d90dc737c7627">
+            <schema1:name>CD38</schema1:name>
+            <dcterms:title>CD38 molecule</dcterms:title>
+            <dcterms:description>ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001937>
+        <obo:PR_000001823>
+          <rdf:Description rdf:nodeID="Nbeec6b9a697e40f3aed02745048420ea">
+            <schema1:name>CD25</schema1:name>
+            <dcterms:title>interleukin 2 receptor subunit alpha</dcterms:title>
+            <dcterms:description>IL-2 receptor alpha chain</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001823>
+        <obo:PR_000000949>
+          <rdf:Description rdf:nodeID="N455496a2ac5b4a1396f3a04f0e4a7dea">
+            <schema1:name>CD8</schema1:name>
+            <dcterms:title>CD8 alpha</dcterms:title>
+            <dcterms:description>T-lymphocyte differentiation antigen</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000000949>
+        <obo:PR_000001002>
+          <rdf:Description rdf:nodeID="N402d46e722004bc3af88c258c76d15e6">
+            <schema1:name>CD14</schema1:name>
+            <dcterms:title>CD14 molecule</dcterms:title>
+            <dcterms:description>Monocyte differentiation antigen</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001002>
+        <obo:PR_000000927>
+          <rdf:Description rdf:nodeID="Nd8c655fd2ecd462b868036e1a14f6799">
+            <schema1:name>CD3</schema1:name>
+            <dcterms:title>CD3 epsilon</dcterms:title>
+            <dcterms:description>T-cell receptor complex, T cell marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000000927>
+        <obo:PR_000001014>
+          <rdf:Description rdf:nodeID="Naffa248b168445589d79c88ee665c69c">
+            <schema1:name>CD117</schema1:name>
+            <dcterms:title>KIT proto-oncogene receptor tyrosine kinase</dcterms:title>
+            <dcterms:description>c-Kit, stem cell factor receptor</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001014>
+        <obo:PR_000002007>
+          <rdf:Description rdf:nodeID="N74c8b26896de48d9a1c55181b062ba28">
+            <schema1:name>IgA</schema1:name>
+            <dcterms:title>immunoglobulin heavy constant alpha 1</dcterms:title>
+            <dcterms:description>Immunoglobulin A heavy chain</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000002007>
+        <obo:PR_000001851>
+          <rdf:Description rdf:nodeID="Nc6a291779f4b49e9af02578fdf11b0cc">
+            <schema1:name>CD27</schema1:name>
+            <dcterms:title>CD27 molecule</dcterms:title>
+            <dcterms:description>TNF receptor superfamily member 7</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001851>
+        <obo:PR_000001185>
+          <rdf:Description rdf:nodeID="N947b517e55714fafaf5753f4f078dd3e">
+            <schema1:name>CD185</schema1:name>
+            <dcterms:title>C-X-C motif chemokine receptor 5</dcterms:title>
+            <dcterms:description>CXCR5, follicular helper T cell marker</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001185>
+        <obo:PR_000002109>
+          <rdf:Description rdf:nodeID="N453effc14dd14480bc8805c69cd151db">
+            <schema1:name>IgM</schema1:name>
+            <dcterms:title>immunoglobulin heavy constant mu</dcterms:title>
+            <dcterms:description>Immunoglobulin M heavy chain</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000002109>
+        <obo:PR_000001308>
+          <rdf:Description rdf:nodeID="N047fe063cefe46fba845dbb4f2c7c785">
+            <schema1:name>CD197</schema1:name>
+            <dcterms:title>C-C motif chemokine receptor 7</dcterms:title>
+            <dcterms:description>CCR7, lymph node homing receptor</dcterms:description>
+          </rdf:Description>
+        </obo:PR_000001308>
+      </rdf:Description>
+    </pbmc:markerDefinitions>
+    <pbmc:lineageHierarchy rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/b_cells"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/t_cells"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/nk_cells"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/monocytes"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/granulocytes"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/dendritic"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/ilc"/>
+    </pbmc:lineageHierarchy>
+    <pbmc:pathwayClassifications rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/memory_pathway"/>
+      <rdf:Description rdf:about="http://pbmc-standards.org/terms/functional_pathway"/>
+    </pbmc:pathwayClassifications>
+    <pbmc:validationMetadata>
+      <pbmc:ValidationInfo rdf:nodeID="N8a0f2471b7cc4abd948d800e97b45ab2">
+        <pbmc:clVersion>2024-05-15</pbmc:clVersion>
+        <pbmc:prVersion>2024-04-01</pbmc:prVersion>
+        <pbmc:validationDate>2025-01-01</pbmc:validationDate>
+        <dcterms:creator>PBMC Standards Consortium</dcterms:creator>
+        <pbmc:validationCriteria>
+          <pbmc:ValidationCriteria rdf:nodeID="N8ce284a5959d41d8a94f02df4a1e477c">
+            <pbmc:exactMatchCriteria>Population directly maps to existing CL term</pbmc:exactMatchCriteria>
+            <pbmc:broaderMatchCriteria>Population is a subtype of existing CL term</pbmc:broaderMatchCriteria>
+            <pbmc:relatedMatchCriteria>Population is related but not exact match to CL term</pbmc:relatedMatchCriteria>
+          </pbmc:ValidationCriteria>
+        </pbmc:validationCriteria>
+      </pbmc:ValidationInfo>
+    </pbmc:validationMetadata>
+    <pbmc:usageGuidelines>
+      <pbmc:UsageGuidelines rdf:nodeID="Ne7469ec3574a446d8c2a8b7c1ec14b88">
+        <dcterms:bibliographicCitation>Please cite this dataset when used in publications</dcterms:bibliographicCitation>
+        <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+        <pbmc:dataSharing>Freely available for research and commercial use</pbmc:dataSharing>
+        <pbmc:updates>Check for updates at http://pbmc-standards.org/</pbmc:updates>
+      </pbmc:UsageGuidelines>
+    </pbmc:usageGuidelines>
+  </pbmc:ImmunePopulationDataset>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/bmem">
+    <rdfs:label>Memory B Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
+    <skos:prefLabel>memory B cell</skos:prefLabel>
+    <skos:definition>A mature B cell that is long-lived, readily activated upon re-encounter of its antigenic determinant, and has the phenotype CD27-positive.</skos:definition>
+    <pbmc:lineage>
+      <pbmc:LineageType rdf:about="http://pbmc-standards.org/terms/b_cells">
+        <rdfs:label>B Cell Lineage</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000236"/>
+        <skos:prefLabel>B cell</skos:prefLabel>
+        <dcterms:description>B lymphocyte lineage from bone marrow</dcterms:description>
+      </pbmc:LineageType>
+    </pbmc:lineage>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+    <pbmc:markerExpression>live/CD45+/CD19+/CD27+/CD38lo/-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:parentPopulation>
+      <pbmc:RootPopulation rdf:about="http://pbmc-standards.org/live_cells">
+        <rdfs:label>Live Cells</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <skos:prefLabel>native cell</skos:prefLabel>
+        <skos:definition>A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' and unicellular organisms 'in environment'.</skos:definition>
+        <dcterms:description>Live cell gate excluding dead cells and debris using fixable viability dye exclusion</dcterms:description>
+        <pbmc:markers>Fixable viability dye negative</pbmc:markers>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</pbmc:tier>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:RootPopulation>
+    </pbmc:parentPopulation>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/nk_dim">
+    <rdfs:label>CD56dim NK Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000623"/>
+    <skos:prefLabel>natural killer cell</skos:prefLabel>
+    <skos:definition>A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic activation.</skos:definition>
+    <pbmc:lineage>
+      <pbmc:LineageType rdf:about="http://pbmc-standards.org/terms/nk_cells">
+        <rdfs:label>NK Cell Lineage</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000623"/>
+        <skos:prefLabel>natural killer cell</skos:prefLabel>
+        <dcterms:description>Innate lymphoid cytotoxic cells</dcterms:description>
+      </pbmc:LineageType>
+    </pbmc:lineage>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001005"/>
+    <pbmc:markerExpression>live/CD45+/CD56+/dim/CD127-/lo/CD16+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001199"/>
+    <pbmc:parentPopulation>
+      <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/nk">
+        <rdfs:label>Natural Killer Cell</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000623"/>
+        <skos:prefLabel>natural killer cell</skos:prefLabel>
+        <skos:definition>A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic activation via germline encoded activation receptors and also regulate immune responses via cytokine release and direct contact with other cells.</skos:definition>
+        <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/nk_cells"/>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+        <pbmc:markerExpression>live/CD45+/CD56+/hi/CD127-/lo</pbmc:markerExpression>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001199"/>
+        <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:ImmunePopulation>
+    </pbmc:parentPopulation>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</pbmc:exactMatch>
+    <skos:broader rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</skos:broader>
+    <rdfs:comment>CD56dim NK subset with cytotoxic function</rdfs:comment>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/ilc2">
+    <rdfs:label>Type 2 Innate Lymphoid Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0001067"/>
+    <skos:prefLabel>type 2 innate lymphoid cell</skos:prefLabel>
+    <skos:definition>An innate lymphoid cell that is capable of producing IL-5, IL-13, and IL-4 and requires transcription factor Gata3 for development.</skos:definition>
+    <pbmc:lineage>
+      <pbmc:LineageType rdf:about="http://pbmc-standards.org/terms/ilc">
+        <rdfs:label>ILC Lineage</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0001065"/>
+        <skos:prefLabel>innate lymphoid cell</skos:prefLabel>
+        <dcterms:description>Innate immune lymphocytes</dcterms:description>
+      </pbmc:LineageType>
+    </pbmc:lineage>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001127"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001848"/>
+    <pbmc:markerExpression>live/CD45+/CD3-/CD127+/CD56-/CD117lo/-/CD294+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000942"/>
+    <pbmc:parentPopulation>
+      <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/ilc">
+        <rdfs:label>Innate Lymphoid Cell</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0001065"/>
+        <skos:prefLabel>innate lymphoid cell</skos:prefLabel>
+        <skos:definition>A lymphocyte that lacks antigen specific receptors and is part of the innate immune system.</skos:definition>
+        <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/ilc"/>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001127"/>
+        <pbmc:markerExpression>live/CD45+/CD3-/CD127+</pbmc:markerExpression>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000942"/>
+        <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:ImmunePopulation>
+    </pbmc:parentPopulation>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd8_naive">
+    <rdfs:label>CD8+ Naive T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000900"/>
+    <skos:prefLabel>naive thymus-derived CD8-positive, alpha-beta T cell</skos:prefLabel>
+    <skos:definition>A CD8-positive, alpha-beta T cell that has not been activated in the periphery, is CD45RA-positive, CD45RO-negative, CD62L-positive, and CD127-positive.</skos:definition>
+    <pbmc:lineage>
+      <pbmc:LineageType rdf:about="http://pbmc-standards.org/terms/t_cells">
+        <rdfs:label>T Cell Lineage</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+        <skos:prefLabel>T cell</skos:prefLabel>
+        <dcterms:description>T lymphocyte lineage from thymus</dcterms:description>
+      </pbmc:LineageType>
+    </pbmc:lineage>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001308"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001336"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4-/CD8+/CD197+/CD45RA+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:parentPopulation>
+      <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd8t">
+        <rdfs:label>CD8+ T Cell</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000625"/>
+        <skos:prefLabel>CD8-positive, alpha-beta T cell</skos:prefLabel>
+        <skos:definition>A mature alpha-beta T cell that expresses an alpha-beta T cell receptor and the CD8 coreceptor.</skos:definition>
+        <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+        <pbmc:markerExpression>live/CD45+/CD3+/CD56-/TCRgd-/TCR Va7.2-/CD4-/CD8+</pbmc:markerExpression>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+        <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/t_lymph"/>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:ImmunePopulation>
+    </pbmc:parentPopulation>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/mdc">
+    <rdfs:label>Myeloid Dendritic Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000782"/>
+    <skos:prefLabel>myeloid dendritic cell</skos:prefLabel>
+    <skos:definition>A dendritic cell of the myeloid lineage that is CD11c-positive.</skos:definition>
+    <pbmc:lineage>
+      <pbmc:LineageType rdf:about="http://pbmc-standards.org/terms/dendritic">
+        <rdfs:label>Dendritic Cell Lineage</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000451"/>
+        <skos:prefLabel>dendritic cell</skos:prefLabel>
+        <dcterms:description>Professional antigen-presenting cells</dcterms:description>
+      </pbmc:LineageType>
+    </pbmc:lineage>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000999"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002015"/>
+    <pbmc:markerExpression>live/CD45+/CD3-/CD11c+/HLA-DR+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001127"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001199"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/ilc3">
+    <rdfs:label>Type 3 Innate Lymphoid Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0001068"/>
+    <skos:prefLabel>type 3 innate lymphoid cell</skos:prefLabel>
+    <skos:definition>An innate lymphoid cell that is capable of producing IL-17 and/or IL-22 and requires transcription factor Ror-gt for development.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/ilc"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001127"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001014"/>
+    <pbmc:markerExpression>live/CD45+/CD3-/CD127+/CD56+/-/CD117+/CD294-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000942"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/ilc"/>
+    <rdfs:comment>No ILC3b in circulation, add CD336 for tissue</rdfs:comment>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd8_em">
+    <rdfs:label>CD8+ Effector Memory T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000913"/>
+    <skos:prefLabel>effector memory CD8-positive, alpha-beta T cell</skos:prefLabel>
+    <skos:definition>A CD8-positive, alpha-beta T cell that is CD45RA-negative, CD45RO-positive, CD62L-negative, and CCR7-negative.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4-/CD8+/CD197-/CD45RA-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001336"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001308"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd8t"/>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd8_temra">
+    <rdfs:label>CD8+ Terminal Effector Memory T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000907"/>
+    <skos:prefLabel>CD45RA-positive, CD62L-negative, CCR7-negative, alpha-beta T cell</skos:prefLabel>
+    <skos:definition>An alpha-beta T cell that is CD45RA-positive, CD62L-negative, and CCR7-negative.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001336"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4-/CD8+/CD197-/CD45RA+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001308"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd8t"/>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</pbmc:exactMatch>
+    <skos:broader rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</skos:broader>
+    <rdfs:comment>CD8+ subset of TEMRA cells</rdfs:comment>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/asc">
+    <rdfs:label>Antibody Secreting Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000946"/>
+    <skos:prefLabel>antibody secreting cell</skos:prefLabel>
+    <skos:definition>A lymphocyte of B lineage that is devoted to secreting large amounts of immunoglobulin.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/b_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001937"/>
+    <pbmc:markerExpression>live/CD45+/CD19+/-/CD27hi/CD38hi</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:exclusionExpression>CD14-/CD3-/CD56-</pbmc:exclusionExpression>
+    <pbmc:conditionalMarkers rdf:resource="http://pbmc-standards.org/"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/th2">
+    <rdfs:label>CD4+ Th2 Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000546"/>
+    <skos:prefLabel>T-helper 2 cell</skos:prefLabel>
+    <skos:definition>A CD4-positive, alpha-beta T cell that has the phenotype GATA-3-positive, CCR4-positive, CCR6-negative, and is capable of producing interleukin-4.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001057"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4+/CD8-/CD185-/CD183-/CD196-/CD194+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001185"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001046"/>
+    <pbmc:parentPopulation>
+      <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd4t">
+        <rdfs:label>CD4+ T Cell</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000624"/>
+        <skos:prefLabel>CD4-positive, alpha-beta T cell</skos:prefLabel>
+        <skos:definition>A mature alpha-beta T cell that expresses an alpha-beta T cell receptor and the CD4 coreceptor.</skos:definition>
+        <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+        <pbmc:markerExpression>live/CD45+/CD3+/CD56-/TCRgd-/TCR Va7.2-/CD4+/CD8-</pbmc:markerExpression>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+        <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/t_lymph"/>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:ImmunePopulation>
+    </pbmc:parentPopulation>
+    <pbmc:pathway>functional</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/t1_t2_b">
+    <rdfs:label>Transitional B Cell Type 1/2</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000818"/>
+    <skos:prefLabel>transitional stage B cell</skos:prefLabel>
+    <skos:definition>An immature B cell of an intermediate stage between the pre-B cell stage and the mature naive stage with the phenotype surface IgM-positive and CD19-positive.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/b_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001937"/>
+    <pbmc:markerExpression>live/CD45+/CD19+/CD27-/CD38hi</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+    <pbmc:exclusionExpression>CD14-/CD3-/CD56-/CD27-</pbmc:exclusionExpression>
+    <pbmc:conditionalMarkers rdf:resource="http://pbmc-standards.org/"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd4_em">
+    <rdfs:label>CD4+ Effector Memory T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000905"/>
+    <skos:prefLabel>effector memory CD4-positive, alpha-beta T cell</skos:prefLabel>
+    <skos:definition>A CD4-positive, alpha-beta T cell that is CD45RA-negative, CD45RO-positive, CD62L-negative, and CCR7-negative.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4+/CD8-/CD197-/CD45RA-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001336"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001308"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd4t"/>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/naive_b">
+    <rdfs:label>Naive B Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000788"/>
+    <skos:prefLabel>naive B cell</skos:prefLabel>
+    <skos:definition>A mature B cell that has the phenotype IgD-positive, CD27-negative, and IgM-positive.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/b_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002238"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002109"/>
+    <pbmc:markerExpression>live/CD45+/CD19+/CD27-/CD38lo/-/CD24-/IgD+/IgMlo</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001824"/>
+    <pbmc:parentPopulation>
+      <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/mature_b">
+        <rdfs:label>Mature B Cell</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000785"/>
+        <skos:prefLabel>mature B cell</skos:prefLabel>
+        <skos:definition>A B cell that is mature, having left the bone marrow. Initially, these cells are IgM+, IgD+, CD23+, CD5-, CD10-, surface Ig+.</skos:definition>
+        <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/b_cells"/>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+        <pbmc:markerExpression>live/CD45+/CD19+/CD27-/CD38lo/-</pbmc:markerExpression>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+        <pbmc:exclusionExpression>CD14-/CD3-/CD56-/CD27-</pbmc:exclusionExpression>
+        <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:ImmunePopulation>
+    </pbmc:parentPopulation>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/pdc">
+    <rdfs:label>Plasmacytoid Dendritic Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000784"/>
+    <skos:prefLabel>plasmacytoid dendritic cell</skos:prefLabel>
+    <skos:definition>A dendritic cell type of distinct morphology, localization, and surface marker expression (CD123-positive) from other dendritic cell types and associated with early stage immune responses.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/dendritic"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001199"/>
+    <pbmc:markerExpression>live/CD45+/CD123hi/CD193-/CD16-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/nk_bright">
+    <rdfs:label>CD56bright NK Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000623"/>
+    <skos:prefLabel>natural killer cell</skos:prefLabel>
+    <skos:definition>A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic activation.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/nk_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001127"/>
+    <pbmc:markerExpression>live/CD45+/CD56hi/CD127-/lo/CD16-/lo/CD57-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001199"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/nk"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</pbmc:exactMatch>
+    <skos:broader rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</skos:broader>
+    <rdfs:comment>CD56bright NK subset with regulatory function</rdfs:comment>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/igg_mem">
+    <rdfs:label>IgG Memory B Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000972"/>
+    <skos:prefLabel>class switched memory B cell</skos:prefLabel>
+    <skos:definition>A memory B cell that has undergone Ig class switching and expresses IgG.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/b_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002152"/>
+    <pbmc:markerExpression>live/CD45+/CD19+/CD27+/CD38lo/-/IgD-/IgM-/IgA-/IgG+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002238"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002109"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002007"/>
+    <pbmc:parentPopulation>
+      <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/switched">
+        <rdfs:label>Class-Switched Memory B Cell</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000972"/>
+        <skos:prefLabel>class switched memory B cell</skos:prefLabel>
+        <skos:definition>A memory B cell that has undergone Ig class switching and therefore does not express IgM or IgD on the cell surface.</skos:definition>
+        <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/b_cells"/>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+        <pbmc:markerExpression>live/CD45+/CD19+/CD27+/CD38lo/-/IgD-/IgM-</pbmc:markerExpression>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002238"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002109"/>
+        <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/bmem"/>
+        <pbmc:pathway>memory</pbmc:pathway>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:ImmunePopulation>
+    </pbmc:parentPopulation>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</pbmc:exactMatch>
+    <skos:broader rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</skos:broader>
+    <rdfs:comment>IgG-expressing class-switched memory B cell</rdfs:comment>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd8_cm">
+    <rdfs:label>CD8+ Central Memory T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000909"/>
+    <skos:prefLabel>central memory CD8-positive, alpha-beta T cell</skos:prefLabel>
+    <skos:definition>A CD8-positive, alpha-beta T cell that is CD45RA-negative, CD45RO-positive, CD62L-positive, and CCR7-positive.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001308"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4-/CD8+/CD197+/CD45RA-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001336"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd8t"/>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/iga_mem">
+    <rdfs:label>IgA Memory B Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000972"/>
+    <skos:prefLabel>class switched memory B cell</skos:prefLabel>
+    <skos:definition>A memory B cell that has undergone Ig class switching and expresses IgA.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/b_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002007"/>
+    <pbmc:markerExpression>live/CD45+/CD19+/CD27+/CD38lo/-/IgD-/IgM-/IgA+/IgG-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002238"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002109"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000002152"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/switched"/>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</pbmc:exactMatch>
+    <skos:broader rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</skos:broader>
+    <rdfs:comment>IgA-expressing class-switched memory B cell</rdfs:comment>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/mait">
+    <rdfs:label>MAIT Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000940"/>
+    <skos:prefLabel>mucosal invariant T cell</skos:prefLabel>
+    <skos:definition>An invariant T cell that is found in the lamina propria of mucosal tissues, is CD4-negative, CD8-positive, and is capable of mounting an immune response to mucosal pathogens.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/mait_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001432"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD56+/-/TCRgd-/TCR Va7.2+/CD161+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:parentPopulation>
+      <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/t_lymph">
+        <rdfs:label>T Lymphocyte</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+        <skos:prefLabel>T cell</skos:prefLabel>
+        <skos:definition>A type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex.</skos:definition>
+        <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+        <pbmc:markerExpression>live/CD45+/CD3+</pbmc:markerExpression>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+        <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:ImmunePopulation>
+    </pbmc:parentPopulation>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/neutrophil">
+    <rdfs:label>Neutrophil</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000775"/>
+    <skos:prefLabel>neutrophil</skos:prefLabel>
+    <skos:definition>A mature granulocyte that is readily stainable with neutral dyes, which is most abundant in peripheral blood and contains a multilobed nucleus and cytoplasmic granules.</skos:definition>
+    <pbmc:lineage>
+      <pbmc:LineageType rdf:about="http://pbmc-standards.org/terms/granulocytes">
+        <rdfs:label>Granulocyte Lineage</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000094"/>
+        <skos:prefLabel>granulocyte</skos:prefLabel>
+        <dcterms:description>Polymorphonuclear leukocyte lineage</dcterms:description>
+      </pbmc:LineageType>
+    </pbmc:lineage>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001005"/>
+    <pbmc:markerExpression>live/CD45+/CD193-/CD16hi</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/basophil">
+    <rdfs:label>Basophil</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000767"/>
+    <skos:prefLabel>basophil</skos:prefLabel>
+    <skos:definition>A mature granulocyte that is readily stainable with basic dyes, has cytoplasmic granules, and functions in allergic reactions.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/granulocytes"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001199"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001074"/>
+    <pbmc:markerExpression>live/CD45+/CD123+/CD193+/CD16-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd4_naive">
+    <rdfs:label>CD4+ Naive T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000895"/>
+    <skos:prefLabel>naive thymus-derived CD4-positive, alpha-beta T cell</skos:prefLabel>
+    <skos:definition>A CD4-positive, alpha-beta T cell that has not been activated in the periphery, is CD45RA-positive, CD45RO-negative, CD62L-positive, and CD127-positive.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001308"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001336"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4+/CD8-/CD197+/CD45RA+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd4t"/>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:LineageType rdf:about="http://pbmc-standards.org/terms/monocytes">
+    <rdfs:label>Monocyte Lineage</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000576"/>
+    <skos:prefLabel>monocyte</skos:prefLabel>
+    <dcterms:description>Mononuclear phagocyte lineage</dcterms:description>
+  </pbmc:LineageType>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/bdn">
+    <rdfs:label>Double Negative B Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000785"/>
+    <skos:prefLabel>mature B cell</skos:prefLabel>
+    <skos:definition>A B cell that is mature, having left the bone marrow.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/b_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:markerExpression>live/CD45+/CD19+/CD27-/CD38lo/-/CD24-/IgD-/IgM-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001851"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001824"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/mature_b"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</pbmc:exactMatch>
+    <skos:broader rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</skos:broader>
+    <rdfs:comment>Double negative (IgD-/IgM-) B cell subset</rdfs:comment>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/gdT">
+    <rdfs:label>Gamma Delta T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000798"/>
+    <skos:prefLabel>gamma-delta T cell</skos:prefLabel>
+    <skos:definition>A T cell that expresses a gamma-delta T cell receptor complex.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/gd_t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/TCRgd+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/t_lymph"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/eosinophil">
+    <rdfs:label>Eosinophil</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000771"/>
+    <skos:prefLabel>eosinophil</skos:prefLabel>
+    <skos:definition>A mature granulocyte that is readily stainable with acidic dyes, contains large granules, and has a bilobed nucleus.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/granulocytes"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001074"/>
+    <pbmc:markerExpression>live/CD45+/CD193+/CD16-/CD123-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd4_cm">
+    <rdfs:label>CD4+ Central Memory T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000904"/>
+    <skos:prefLabel>central memory CD4-positive, alpha-beta T cell</skos:prefLabel>
+    <skos:definition>A CD4-positive, alpha-beta T cell that is CD45RA-negative, CD45RO-positive, CD62L-positive, and CCR7-positive.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001308"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4+/CD8-/CD197+/CD45RA-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001336"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd4t"/>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/th1">
+    <rdfs:label>CD4+ Th1 Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000545"/>
+    <skos:prefLabel>T-helper 1 cell</skos:prefLabel>
+    <skos:definition>A CD4-positive, alpha-beta T cell that has the phenotype T-bet-positive, CXCR3-positive, CCR6-negative, and is capable of producing interferon-gamma.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001046"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4+/CD8-/CD185-/CD183+/CD196-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001185"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd4t"/>
+    <pbmc:pathway>functional</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/ilc1">
+    <rdfs:label>Type 1 Innate Lymphoid Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0001141"/>
+    <skos:prefLabel>type 1 innate lymphoid cell</skos:prefLabel>
+    <skos:definition>An innate lymphoid cell that is capable of producing interferon-gamma and lacks expression of transcription factors that define ILC2s and ILC3s.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/ilc"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001127"/>
+    <pbmc:markerExpression>live/CD45+/CD3-/CD127+/CD56-/CD117-/CD294-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000942"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/ilc"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/intermediate_mono">
+    <rdfs:label>Intermediate Monocyte</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000875"/>
+    <skos:prefLabel>non-classical monocyte</skos:prefLabel>
+    <skos:definition>A monocyte that is CD14-positive, CD16-positive.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/monocytes"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001005"/>
+    <pbmc:markerExpression>live/CD45+/CD14+/CD16hi</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:parentPopulation>
+      <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/mono">
+        <rdfs:label>Monocyte</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000576"/>
+        <skos:prefLabel>monocyte</skos:prefLabel>
+        <skos:definition>A mononuclear phagocyte that is a mature or maturing myeloid cell, typically large, prepare by the bone marrow from a monoblast and found in the blood.</skos:definition>
+        <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/monocytes"/>
+        <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pbmc:tier>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+        <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+        <pbmc:markerExpression>live/CD45+/CD14lo/+/CD11c+/-</pbmc:markerExpression>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+        <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+        <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/live_cells"/>
+        <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+      </pbmc:ImmunePopulation>
+    </pbmc:parentPopulation>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</pbmc:exactMatch>
+    <skos:broader rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</skos:broader>
+    <rdfs:comment>Intermediate monocyte subset with mixed phenotype</rdfs:comment>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/cd4_temra">
+    <rdfs:label>CD4+ Terminal Effector Memory T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000907"/>
+    <skos:prefLabel>CD45RA-positive, CD62L-negative, CCR7-negative, alpha-beta T cell</skos:prefLabel>
+    <skos:definition>An alpha-beta T cell that is CD45RA-positive, CD62L-negative, and CCR7-negative.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001336"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4+/CD8-/CD197-/CD45RA+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001308"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd4t"/>
+    <pbmc:pathway>memory</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</pbmc:exactMatch>
+    <skos:broader rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</skos:broader>
+    <rdfs:comment>CD4+ subset of TEMRA cells</rdfs:comment>
+  </pbmc:ImmunePopulation>
+  <pbmc:PathwayType rdf:about="http://pbmc-standards.org/terms/functional_pathway">
+    <rdfs:label>Functional Subset Pathway</rdfs:label>
+    <dcterms:description>T cell functional subset classifications</dcterms:description>
+    <pbmc:subsets>th2</pbmc:subsets>
+    <pbmc:subsets>th1</pbmc:subsets>
+    <pbmc:subsets>treg</pbmc:subsets>
+    <pbmc:subsets>tfh</pbmc:subsets>
+    <pbmc:subsets>th17</pbmc:subsets>
+  </pbmc:PathwayType>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/treg">
+    <rdfs:label>Regulatory T Cell</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+    <skos:prefLabel>regulatory T cell</skos:prefLabel>
+    <skos:definition>A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/t_cells"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000932"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001823"/>
+    <pbmc:markerExpression>live/CD45+/CD3+/CD4+/CD8-/CD25+/CD127lo/-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000949"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/cd4t"/>
+    <pbmc:pathway>functional</pbmc:pathway>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/classical_mono">
+    <rdfs:label>Classical Monocyte</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000860"/>
+    <skos:prefLabel>classical monocyte</skos:prefLabel>
+    <skos:definition>A monocyte that is CD14-positive and CD16-negative with a central role in antimicrobial responses and wound healing.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/monocytes"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001002"/>
+    <pbmc:markerExpression>live/CD45+/CD14+/CD16-</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001005"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/mono"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:ImmunePopulation rdf:about="http://pbmc-standards.org/nonclassical_mono">
+    <rdfs:label>Non-Classical Monocyte</rdfs:label>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000875"/>
+    <skos:prefLabel>non-classical monocyte</skos:prefLabel>
+    <skos:definition>A monocyte that is CD14-low, CD16-positive and has a patrolling behavior.</skos:definition>
+    <pbmc:lineage rdf:resource="http://pbmc-standards.org/terms/monocytes"/>
+    <pbmc:tier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pbmc:tier>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001309"/>
+    <pbmc:positiveMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001005"/>
+    <pbmc:markerExpression>live/CD45+/CD14lo/CD16+</pbmc:markerExpression>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000000927"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001020"/>
+    <pbmc:negativeMarkers rdf:resource="http://purl.obolibrary.org/obo/PR_000001380"/>
+    <pbmc:parentPopulation rdf:resource="http://pbmc-standards.org/mono"/>
+    <pbmc:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pbmc:exactMatch>
+  </pbmc:ImmunePopulation>
+  <pbmc:PathwayType rdf:about="http://pbmc-standards.org/terms/memory_pathway">
+    <rdfs:label>Memory Differentiation Pathway</rdfs:label>
+    <dcterms:description>T cell memory differentiation states</dcterms:description>
+    <pbmc:stages>central_memory</pbmc:stages>
+    <pbmc:stages>effector_memory</pbmc:stages>
+    <pbmc:stages>naive</pbmc:stages>
+    <pbmc:stages>terminal_effector</pbmc:stages>
+  </pbmc:PathwayType>
+</rdf:RDF>
