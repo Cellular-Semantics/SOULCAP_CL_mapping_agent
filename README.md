@@ -1,3 +1,5 @@
+**CAUTION**: Uses draft SOULCAP mappings that DO NOT CORRESPOND TO ANY CURRENT OFFICIAL RELEASE.  ***THIS repo is strictly Proof of Concept.***
+
 # Cell Ontology Mapping Agent
 
 An MCP (Model Context Protocol) server for efficient mapping of cell surface markers to Cell Ontology terms using the PBMC immunophenotyping dataset.
